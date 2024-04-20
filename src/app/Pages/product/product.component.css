@@ -1,0 +1,94 @@
+.main{
+    width: 100%;
+}
+.main h3{
+    text-align: center;
+    font-weight:bolder;
+    margin-top: 20px;
+    font-size: 30px;
+}
+header button{
+    background-color: black;
+    color: white;
+}
+.inputgroup .input{
+    
+    border: 2px solid black;
+    width: 100%;
+    padding: 10px;
+    color: black;
+	outline:none;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.inputgroup{
+	
+	display:flex;
+    width:100%;
+    position: relative;
+}
+.inputgroup span {
+	left:0;
+	margin-left: 10px;
+    margin-top: -6px; 
+    position: absolute;
+    top: 1rem;
+    color: grey;
+    pointer-events: none;
+	transition:0.3s;
+	font-size:1.2rem;
+
+}
+.heading{
+    left:0;
+	margin-left: 10px;
+    margin-top: -6px; 
+    position: absolute;
+    top: 1rem;
+    color: grey;
+    pointer-events: none;
+	transition:0.3s;
+	font-size:1.2rem;
+}
+
+.input:valid ~ span,
+.input:focus ~ span
+{
+    transform:
+		translateX(10px) translateY(-7px);	
+		color: black;
+		font-size:0.80rem;
+		margin-top:-30px;
+		background:white;
+        padding: 4px; 
+}
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
+.custom-file-input {
+    display: inline-block;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+
+  .table img{
+    height: 150px;
+    width: 150px;
+}
+.table td{
+    word-wrap: break-word;
+    max-width: 100px;
+    align-self: center;
+}
+
+

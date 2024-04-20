@@ -1,0 +1,25 @@
+<!-- admin-panel.component.html -->
+
+  <div class="navbar cen">
+      <h1>
+          Decor My Way
+      </h1>
+      <span style="font-size: 30px; cursor: pointer" (click)="toggleSidebar()">
+        &#9776; Menu
+      </span>
+      
+    </div>  
+    
+    <div class="sidebar" [style.left]="isSidebarOpen ? '0' : '-250px'">
+      <a href="#" (click)="toggleSidebar()">Close</a>
+      <a href="#" (click)="toggleSidebar()">Dashboard</a>
+      <a routerLink="/addcatagory" (click)="toggleSidebar()">Categories</a>
+      <a routerLink="/product" (click)="toggleSidebar()">Products</a>
+
+      <a href="#" (click)="toggleSidebar()">Orders</a>
+      <a href="#" (click)="toggleSidebar()">Customers</a>
+      <!-- Add more links as needed -->
+    </div>
+    
+  
+    
