@@ -11,6 +11,8 @@ import { AddcategoryComponent } from './Pages/addcategory/addcategory.component'
 import {  HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './Pages/product/product.component';
 import { SafeUrlPipe } from './SafeUrlPipes.component';
+import { OrderComponent } from './Pages/order/order.component';
+import { OrderSuccessComponent } from './Pages/order-success/order-success.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { SafeUrlPipe } from './SafeUrlPipes.component';
     AddcategoryComponent,
     ProductComponent,
     SafeUrlPipe,
+    OrderComponent,
+    OrderSuccessComponent,
     
   ],
   imports: [

@@ -181,7 +181,7 @@ closemodal(modalid:string){
   const modaldiv = document.getElementById(modalid);
   if(modaldiv != null)
   {
-    modaldiv.style.display = 'none';
+    modaldiv.style.display = 'none';    
   }
 }
 }

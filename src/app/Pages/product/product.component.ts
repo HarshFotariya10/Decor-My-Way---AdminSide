@@ -77,7 +77,6 @@ products :any[] = [];
 getproductdata(){
   this.http.get('http://localhost:8080/product/').subscribe((data:any)=>{ 
     this.products=data;
-
   })
 }
 deleteproduct(productId: number) {
@@ -139,7 +138,7 @@ selectedCategory: any;
         (error) => {
           console.error('Error fetching category details', error);
           
-        }
+        } 
        
         
       );
