@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-card total-sales">
+            <div class="dashboard-item">
+                <img src="assets/image/totalsales.png" alt="Total Sales">  
+                <h2>Total Sales (in Rupees)</h2>
+                <p id="total-sales">₹ {{totalamount}}</p>
+            </div>
+        </div>
+        <div class="dashboard-card total-orders">
+            <div class="dashboard-item">
+                <img src="assets/image/totalorder.png" alt="Total Sales"> 
+                <h2 style="color: white;">Total Orders</h2>
+                <p id="total-orders">{{totalorderCount}}</p>
+            </div>
+        </div>
+        <div class="dashboard-card support-requests">
+            <div class="dashboard-item">
+                <img src="assets/image/Contact.png" alt="Total Sales">
+                <h2>Support Requests</h2>
+                <p id="support-requests">{{response}}</p>
+            </div>
+        </div>
+        <div *ngIf="productdata" class="dashboard-card pending-orders">
+            <div class="dashboard-item">
+                <img src="{{productdata.image}}" alt="Total Sales">
+                <h2>Most Sold Product</h2>
+                <p>{{ productdata.productname}}</p>
+            </div>
+        </div>
+        <div class="dashboard-card revenue">
+            <div class="dashboard-item">
+                <img src="assets/image/totalproduct.png" alt="Total Sales">   
+                <h2>Total Products</h2>
+                <p id="monthly-revenue">{{totalproductcount}}</p>
+            </div>
+        </div>
+        <div class="dashboard-card new-customers">
+            <div class="dashboard-item">
+                <img src="assets/image/Totaluser.png" alt="Total Sales">
+                <h2>Total Customers</h2>
+                <p id="new-customers">{{totalusercount}}</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styles */
+body {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Dashboard container styles */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+/* Dashboard card styles */
+.dashboard-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Dashboard item styles */
+.dashboard-item {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.dashboard-item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.dashboard-item p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Custom color for cards based on their name */
+.total-sales {
+    background-color: #FFD700; /* Gold */
+}
+
+.total-orders {
+    background-color: #333; /* Deep Sky Blue */
+}
+
+.support-requests {
+    background-color: #32CD32; /* Lime Green */
+}
+
+.pending-orders {
+    background-color: #FF6347; /* Tomato */
+}
+
+.revenue {
+    background-color: #9932CC; /* Dark Orchid */
+}
+
+.new-customers {
+    background-color: #FFA500; /* Orange */
+}
+.dashboard-item img {
+    height: 150px;
+    width: 150px; /* Set a maximum height for the image */
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+
+

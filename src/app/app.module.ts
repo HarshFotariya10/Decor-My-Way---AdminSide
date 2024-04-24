@@ -13,6 +13,7 @@ import { ProductComponent } from './Pages/product/product.component';
 import { SafeUrlPipe } from './SafeUrlPipes.component';
 import { OrderComponent } from './Pages/order/order.component';
 import { OrderSuccessComponent } from './Pages/order-success/order-success.component';
+import { DasboardComponent } from './dasboard/dasboard.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { OrderSuccessComponent } from './Pages/order-success/order-success.compo
     SafeUrlPipe,
     OrderComponent,
     OrderSuccessComponent,
+    DasboardComponent,
     
   ],
   imports: [

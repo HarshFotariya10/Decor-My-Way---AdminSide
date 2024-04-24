@@ -12,7 +12,7 @@
     
     <div class="sidebar" [style.left]="isSidebarOpen ? '0' : '-250px'">
       <a href="#" (click)="toggleSidebar()">Close</a>
-      <a href="#" (click)="toggleSidebar()">Dashboard</a>
+      <a routerLink="/dasboard" (click)="toggleSidebar()">Dashboard</a>
       <a routerLink="/addcatagory" (click)="toggleSidebar()">Categories</a>
       <a routerLink="/product" (click)="toggleSidebar()">Products</a>
 
